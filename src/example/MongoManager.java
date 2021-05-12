@@ -18,7 +18,7 @@ public class MongoManager {
         try {
 
             Properties prop = new Properties();
-            prop.load(new FileInputStream(System.getProperty("user.home") + "/mydb.cfg"));
+            prop.load(new FileInputStream("/opt/tomcat/temp/mydb.cfg"));
 
             host = prop.getProperty("host").toString();
             dbname = prop.getProperty("dbname").toString();
